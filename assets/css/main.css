@@ -22,12 +22,16 @@ input#submit-btn {
     width: 67px;
 }
 
+.articleClass {
+    border: solid 1px;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f6f8f8;
+    border-style: outset
+}
+
 .result {
     padding: 31px;
 }
 
-.articleClass {
-    border: solid 1px;
-    list-style: none;
-    padding: 10px
-}

@@ -24,13 +24,27 @@ function handleError() {
 
 function addNews() {
     const data = JSON.parse(this.responseText)
-    const article = data.response.docs[0]
+    const articles = data.response.docs
+    articles.forEach(article => {
     const title = article.headline.main
     const snippet = article.snippet
+    const url = article.web_url
 
     let li = document.createElement('li')
+    let h2 = document.createElement('h2')
+    let p = document.createElement('p')
+    let h6 = document.createElement('a')
     li.className = 'articleClass'
-    li.innerText = snippet
+    p.innerText = snippet
+    h2.innerText = title
+    h6.innerText = url
+    h6.setAttribute('href', url)
 
+
+    li.appendChild(h2)
+    li.appendChild(p)
+    li.appendChild(h6)
     responseContainer.appendChild(li)
+    console.log(articles)
+    });
 }
