@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #ece90e;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+input#search-keyword {
+    width: 20em;
+}
+
+input#submit-btn {
+    padding: 5px;
+    width: 67px;
+}
+
+.result {
+    padding: 31px;
+}
+
+.articleClass {
+    border: solid 1px;
+    list-style: none;
+    padding: 10px
+}
